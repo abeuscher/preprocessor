@@ -137,6 +137,7 @@ function bundleJsFile(f) {
   b.add(f.srcDir + f.srcFileName);
   b.transform("uglifyify", { global: true });
   b.transform(require("pugify"));
+  b.transform(require("reactify"));
   var ws = fs.createWriteStream(f.buildDir + f.buildFileName);
   console.log(f.srcDir + f.srcFileName + " bundled");
   console.log(f.buildDir + f.buildFileName + " written");

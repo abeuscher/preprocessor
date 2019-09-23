@@ -22,6 +22,9 @@
         "pug": "^2.0.4",
         "pug-php-filter": "^0.0.1",
         "pugify": "^2.2.0",
+        "react": "^16.9.0",
+        "react-dom": "^16.9.0",
+        "reactify": "^1.1.1",
         "uglifyify": "^5.0.2"
     },
     "dependencies": {

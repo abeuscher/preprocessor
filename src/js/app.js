@@ -1,3 +1,6 @@
+var React = require("react");
+var ReactDOM = require("react-dom");
+
 
 var loginScreen = require("./pug-templates/login.pug");
 var parseHTML = require("./utils/parse-html.js");
@@ -13,4 +16,14 @@ window.addEventListener("load", function(e) {
         .then(function(data) {
             console.log(data[0].title.rendered);
         });
+    ReactDOM.render(
+        React.createElement(Page),
+        document.getElementById("app")
+        );
 });
+
+class Page extends React.Component {
+    render() {
+      return <div dangerouslySetInnerHTML={{__html: require("./pug-templates/login.pug")()}}></div>;
+    }
+  }
