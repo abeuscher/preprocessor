@@ -1,1 +1,6 @@
-p Hollah!
+- var data = locals;
+.wrapper
+    // p!=JSON.stringify(data)
+    h1!=data.acf.title
+    .description!=data.acf.meta_description
+    .content!=data.acf.page_content
