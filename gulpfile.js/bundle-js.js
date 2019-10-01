@@ -20,6 +20,7 @@ function bundleJS(cb) {
             .pipe(fs.createWriteStream(f.buildDir + f.buildFileName)); 
         }
       }
+      processJS();
       for (i=0;i<settings.jsFiles.length;i++) {
         watch([settings.jsFiles[i].srcDir + "*", settings.jsFiles[i].srcDir + "**/*"], processJS);
       }

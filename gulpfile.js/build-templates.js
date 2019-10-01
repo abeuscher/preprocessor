@@ -26,6 +26,7 @@ function buildTemplates(cb) {
             .pipe(dest(t.buildDir));
         }
     }
+    processTemplates();
     for (i=0;i<settings.templates.length;i++) {
         watch([settings.templates[i].srcDir + "*.pug",settings.templates[i].srcDir + "**/*.pug"], processTemplates);
     }

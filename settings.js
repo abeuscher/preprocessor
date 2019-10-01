@@ -16,6 +16,7 @@ var assetsBuildDir = buildDir;
 function siteSettings() {
   return {
     siteName: "Al's new Preprocessor",
+    directories:[buildDir, jsBuildDir],
     jsFiles: [
       {
         name: "Main Bundle",
