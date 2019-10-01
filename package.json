@@ -2,24 +2,23 @@
     "name": "als-preprocessor",
     "version": "0.0.0",
     "description": "",
-    "main": "prc.js",
+    "main": "gulpfile.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Alex Beuscher",
     "license": "MIT",
     "devDependencies": {
-        "autoprefixer": "^9.6.1",
         "browserify": "^16.5.0",
         "browserify-shim": "^3.8.14",
-        "cssnano": "^4.1.10",
         "file-system": "^2.2.2",
-        "ncp": "^2.0.0",
-        "node-sass": "^4.12.0",
-        "node-sass-watcher": "^0.5.1",
-        "postcss": "^7.0.18",
-        "precss": "^4.0.0",
-        "pug": "^2.0.4",
+        "gulp":"^4.0.2",
+        "gulp-css":"^0.1.0",
+        "gulp-cssmin":"^0.2.0",
+        "gulp-ext-replace":"^0.2.0",
+        "gulp-autoprefixer":"^7.0.0",
+        "gulp-pug":"^4.0.1",
+        "gulp-sass":"^4.0.2",
         "pug-php-filter": "^0.0.1",
         "pugify": "^2.2.0",
         "uglifyify": "^5.0.2"
@@ -27,8 +26,18 @@
     "dependencies": {
       "yarn": "^1.13.0"
     },
-    "bin" : {
-      "hello" : "./prc.js"
-    }
+    "browserslist": [
+      "> 1%",
+      "ie >= 8",
+      "edge >= 15",
+      "ie_mob >= 10",
+      "ff >= 45",
+      "chrome >= 45",
+      "safari >= 7",
+      "opera >= 23",
+      "ios >= 7",
+      "android >= 4",
+      "bb >= 10"
+    ]
   }
   

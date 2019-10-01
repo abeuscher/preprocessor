@@ -4,6 +4,8 @@ var parseHTML = require("./utils/parse-html.js");
 
 window.addEventListener("load", function(e) {
 
+    console.log("MITTENS");
+
     var el = document.getElementById("app");
 
     fetch("http://beuscher.net/wp-json/wp/v2/webpage/")
